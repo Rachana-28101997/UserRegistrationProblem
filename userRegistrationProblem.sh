@@ -1,8 +1,8 @@
 #! /bin/bash -x
 echo "Welcome to user registration program"
-read -p "Enter the firstName " fname
+read -p "Enter the lastName " lname
 pattern="^[A-Z]+[a-z]{3,}"
-if [[ $fname =~ $pattern ]]
+if [[ $lname =~ $pattern ]]
 then
 echo valid
 else
