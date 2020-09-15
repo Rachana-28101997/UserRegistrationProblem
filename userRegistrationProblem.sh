@@ -1,10 +1,10 @@
 #! /bin/bash -x
 echo "Welcome to user registration program"
-read -p "Enter the Users valid email " email
-pattern="^[a-z]+[0-9]*([-_+.][0-9a-z]+)*@[0-9a-z]+[.][a-z]{2,4}([,]{1})*([.][a-z]{2})*$"
-if [[ $email =~ $pattern ]]
+read -p "Enter the Users mobile number " mobNum
+pattern="^[[+][1?9?]{2}]?[[:space:]]?[[0-9]{10}]*$"
+if [[ $mobNum =~ $pattern ]]
 then
-echo valid
+echo "valid phone number"
 else
-echo invalid
+echo "invalid phone number"
 fi
